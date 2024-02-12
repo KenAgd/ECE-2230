@@ -1,0 +1,371 @@
+-u 7	
+	This driver tests replacing and removing the root
+	
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 15 items into tree
+ -- Test (0) tree after adding key 26
+Tree with 1 keys
+   26
+
+ -- Test (1) tree after adding key 0
+Tree with 2 keys
+   26
+         0
+
+ -- Test (2) tree after adding key 49
+Tree with 3 keys
+        49
+   26
+         0
+
+ -- Test (3) tree after adding key 34
+Tree with 4 keys
+        49
+             34
+   26
+         0
+
+ -- Test (4) tree after adding key 37
+Tree with 5 keys
+        49
+                  37
+             34
+   26
+         0
+
+ -- Test (5) tree after adding key 41
+Tree with 6 keys
+        49
+                       41
+                  37
+             34
+   26
+         0
+
+ -- Test (6) tree after adding key 17
+Tree with 7 keys
+        49
+                       41
+                  37
+             34
+   26
+             17
+         0
+
+ -- Test (7) tree after adding key 21
+Tree with 8 keys
+        49
+                       41
+                  37
+             34
+   26
+                  21
+             17
+         0
+
+ -- Test (8) tree after adding key 10
+Tree with 9 keys
+        49
+                       41
+                  37
+             34
+   26
+                  21
+             17
+                  10
+         0
+
+ -- Test (9) tree after adding key 36
+Tree with 10 keys
+        49
+                       41
+                  37
+                       36
+             34
+   26
+                  21
+             17
+                  10
+         0
+
+ -- Test (10) tree after adding key 13
+Tree with 11 keys
+        49
+                       41
+                  37
+                       36
+             34
+   26
+                  21
+             17
+                       13
+                  10
+         0
+
+ -- Test (11) tree after adding key 3
+Tree with 12 keys
+        49
+                       41
+                  37
+                       36
+             34
+   26
+                  21
+             17
+                       13
+                  10
+                        3
+         0
+
+ -- Test (12) tree after adding key 42
+Tree with 13 keys
+        49
+                            42
+                       41
+                  37
+                       36
+             34
+   26
+                  21
+             17
+                       13
+                  10
+                        3
+         0
+
+ -- Test (13) tree after adding key 7
+Tree with 14 keys
+        49
+                            42
+                       41
+                  37
+                       36
+             34
+   26
+                  21
+             17
+                       13
+                  10
+                             7
+                        3
+         0
+
+ -- Test (14) tree after adding key 48
+Tree with 15 keys
+        49
+                                 48
+                            42
+                       41
+                  37
+                       36
+             34
+   26
+                  21
+             17
+                       13
+                  10
+                             7
+                        3
+         0
+
+
+All insertions complete.
+Removing 1 items from tree
+ -- Test (0) about to remove key 26
+Tree with 14 keys
+        49
+                            48
+                       42
+                  41
+             37
+                  36
+   34
+                  21
+             17
+                       13
+                  10
+                             7
+                        3
+         0
+
+
+
+
+
+
+-u 8
+	This driver tests normal node removal and then the root
+	
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 7 items into tree
+ -- Test (0) tree after adding key 11
+Tree with 1 keys
+   11
+
+ -- Test (1) tree after adding key 6
+Tree with 2 keys
+   11
+         6
+
+ -- Test (2) tree after adding key 16
+Tree with 3 keys
+        16
+   11
+         6
+
+ -- Test (3) tree after adding key 4
+Tree with 4 keys
+        16
+   11
+         6
+              4
+
+ -- Test (4) tree after adding key 8
+Tree with 5 keys
+        16
+   11
+              8
+         6
+              4
+
+ -- Test (5) tree after adding key 14
+Tree with 6 keys
+        16
+             14
+   11
+              8
+         6
+              4
+
+ -- Test (6) tree after adding key 19
+Tree with 7 keys
+             19
+        16
+             14
+   11
+              8
+         6
+              4
+
+
+All insertions complete.
+Removing 7 items from tree
+ -- Test (0) about to remove key 4
+Tree with 6 keys
+             19
+        16
+             14
+   11
+              8
+         6
+
+ -- Test (1) about to remove key 8
+Tree with 5 keys
+             19
+        16
+             14
+   11
+         6
+
+ -- Test (2) about to remove key 14
+Tree with 4 keys
+             19
+        16
+   11
+         6
+
+ -- Test (3) about to remove key 19
+Tree with 3 keys
+        16
+   11
+         6
+
+ -- Test (4) about to remove key 6
+Tree with 2 keys
+        16
+   11
+
+ -- Test (5) about to remove key 16
+Tree with 1 keys
+   11
+
+ -- Test (6) about to remove key 11
+Tree with 0 keys
+
+
+-u 9
+	This driver tests inserting and removing large and extreme values
+	
+	Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 5 items into tree
+ -- Test (0) tree after adding key 0
+Tree with 1 keys
+    0
+
+ -- Test (1) tree after adding key 55427
+Tree with 2 keys
+     55427
+    0
+
+ -- Test (2) tree after adding key 27939
+Tree with 3 keys
+     55427
+          27939
+    0
+
+ -- Test (3) tree after adding key -13375
+Tree with 4 keys
+     55427
+          27939
+    0
+     -13375
+
+ -- Test (4) tree after adding key 60734
+Tree with 5 keys
+          60734
+     55427
+          27939
+    0
+     -13375
+
+
+All insertions complete.
+Removing 5 items from tree
+ -- Test (0) about to remove key 55427
+Tree with 4 keys
+     60734
+          27939
+    0
+     -13375
+
+ -- Test (1) about to remove key 27939
+Tree with 3 keys
+     60734
+    0
+     -13375
+
+ -- Test (2) about to remove key 0
+Tree with 2 keys
+60734
+     -13375
+
+ -- Test (3) about to remove key -13375
+Tree with 1 keys
+60734
+
+ -- Test (4) about to remove key 60734
+Tree with 0 keys
+
+

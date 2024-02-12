@@ -1,0 +1,183 @@
+Unit driver 1 tests for basic function by inserting, searching for, and deleting keys and then deleting the table
+
+valgrind --leak-check=yes --track-origins=yes ./lab6 -u 1 -v
+==115161== Memcheck, a memory error detector
+==115161== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==115161== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==115161== Command: ./lab6 -u 1 -v
+==115161== 
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 11302021
+--Begin unit driver 1--
+
+Inserting 8 keys
+Table key positions
+[  0]   110
+[  1] EMPTY
+[  2] EMPTY
+[  3] EMPTY
+[  4]   880
+[  5]   770
+[  6]   660
+[  7]   550
+[  8]   440
+[  9]   330
+[ 10]   220
+
+Removing 8 keys
+Table key positions
+[  0] DELETE
+[  1] EMPTY
+[  2] EMPTY
+[  3] EMPTY
+[  4] DELETE
+[  5] DELETE
+[  6] DELETE
+[  7] DELETE
+[  8] DELETE
+[  9] DELETE
+[ 10] DELETE
+==115161== 
+==115161== HEAP SUMMARY:
+==115161==     in use at exit: 0 bytes in 0 blocks
+==115161==   total heap usage: 4 allocs, 4 frees, 1,256 bytes allocated
+==115161== 
+==115161== All heap blocks were freed -- no leaks are possible
+==115161== 
+==115161== For lists of detected and suppressed errors, rerun with: -s
+==115161== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+
+
+
+
+Unit driver 2 tests bad combo of hashing and table size by using double hashing with an even table size. Should crash trying to insert the 4th key into the table
+
+valgrind --leak-check=yes --track-origins=yes ./lab6 -u 2 -v
+==115201== Memcheck, a memory error detector
+==115201== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==115201== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==115201== Command: ./lab6 -u 2 -v
+==115201== 
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 11302021
+----- Begin unit driver 2 -----
+Inserting 4 keys
+this should print before a crash
+Table key positions
+[  0]    30
+[  1]    25
+[  2] EMPTY
+[  3] EMPTY
+[  4] EMPTY
+[  5]    35
+==115201== 
+==115201== HEAP SUMMARY:
+==115201==     in use at exit: 136 bytes in 3 blocks
+==115201==   total heap usage: 4 allocs, 1 frees, 1,160 bytes allocated
+==115201== 
+==115201== 136 (24 direct, 112 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 3
+==115201==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==115201==    by 0x1093DD: table_construct (table.c:40)
+==115201==    by 0x10A077: main (lab6.c:164)
+==115201== 
+==115201== LEAK SUMMARY:
+==115201==    definitely lost: 24 bytes in 1 blocks
+==115201==    indirectly lost: 112 bytes in 2 blocks
+==115201==      possibly lost: 0 bytes in 0 blocks
+==115201==    still reachable: 0 bytes in 0 blocks
+==115201==         suppressed: 0 bytes in 0 blocks
+==115201== 
+==115201== For lists of detected and suppressed errors, rerun with: -s
+==115201== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+
+
+
+Deletion driver as seen in homework set
+
+
+valgrind --leak-check=yes --track-origins=yes ./lab6 -u 3 -v
+==115229== Memcheck, a memory error detector
+==115229== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==115229== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==115229== Command: ./lab6 -u 3 -v
+==115229== 
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 11302021
+
+Insert keys 5 12 11 19
+Table key positions
+[  0] EMPTY
+[  1] EMPTY
+[  2]    19
+[  3]    11
+[  4]    12
+[  5]     5
+[  6] EMPTY
+
+Remove keys 5 8 12
+Table key positions
+[  0] EMPTY
+[  1] EMPTY
+[  2]    19
+[  3]    11
+[  4] DELETE
+[  5] DELETE
+[  6] EMPTY
+
+Insert keys 19 26
+Table key positions
+[  0] EMPTY
+[  1] EMPTY
+[  2]    19
+[  3]    11
+[  4] DELETE
+[  5]    26
+[  6] EMPTY
+
+Insert 7 8 9 10 11 12
+Table key positions
+[  0]     7
+[  1]     8
+[  2]     9
+[  3]    10
+[  4]    11
+[  5]    12
+[  6] EMPTY
+
+Remove 7 8 9 10
+Table key positions
+[  0] DELETE
+[  1] DELETE
+[  2] DELETE
+[  3] DELETE
+[  4]    11
+[  5]    12
+[  6] EMPTY
+
+Insert 13 14
+Table key positions
+[  0]    14
+[  1] DELETE
+[  2] DELETE
+[  3] DELETE
+[  4]    11
+[  5]    12
+[  6]    13
+
+Retrieve 16
+16 not found.
+==115229== 
+==115229== HEAP SUMMARY:
+==115229==     in use at exit: 0 bytes in 0 blocks
+==115229==   total heap usage: 19 allocs, 19 frees, 1,352 bytes allocated
+==115229== 
+==115229== All heap blocks were freed -- no leaks are possible
+==115229== 
+==115229== For lists of detected and suppressed errors, rerun with: -s
+==115229== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
