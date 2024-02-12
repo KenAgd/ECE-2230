@@ -1,0 +1,139 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDID x
+QUERY x
+CLEAROLD x
+TRIM
+MATCH x (end list with -1)
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2021
+# testintput.txt
+# 
+# This is a test script to show a few simple tests for the sequential list ADT.
+# It provides an example of a test plan, but it does not consider many cases.
+# 
+# You must create your own test script that tests for other cases.  You can start
+# with this file and edit it to build your own test plan.  
+# 
+# Assumptions: these tests are designed with a list size of 4.  
+# 
+# TEST 1:  Add three entries to list.  
+# 
+New list with size: 4
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 551
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 100
+# 
+# 
+# To determine if test 1 passes look for three "Inserted" messages
+# 
+# TEST 2: Print the list and verify three entries are sorted 
+# 
+List has 3 records
+1: EPID: 100, Rec# 3, Time: 105 Src: 2, MAC: 100, Auth: T, Pri: none, C: 2, RSSI: 11.1, B: 5
+2: EPID: 111, Rec# 1, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: none, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 551, Rec# 2, Time: 100 Src: 1, MAC: 551, Auth: F, Pri: none, C: 1, RSSI: 2.4, B: 1.3
+Number records: 3, Array size: 4
+# 
+# To deterine if test 2 passes the list should be printed in order with 3 records.
+# Also, stats should show 3 records with an array size of 4
+# 
+# TEST 3:  Update the 111 entry in the list and add an ID to fill the table
+# 
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Updated: 111
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 333
+# 
+# To determine if test 3 passes look for "Updated" and "Inserted" messages
+# 
+# TEST 4: Print the list, verify the entry for id 111 is replaced
+# 
+List has 4 records
+1: EPID: 100, Rec# 3, Time: 105 Src: 2, MAC: 100, Auth: T, Pri: none, C: 2, RSSI: 11.1, B: 5
+2: EPID: 111, Rec# 4, Time: 106 Src: 0, MAC: 111, Auth: F, Pri: none, C: 3, RSSI: 64.4, B: 2.4
+3: EPID: 333, Rec# 5, Time: 106 Src: 0, MAC: 333, Auth: F, Pri: none, C: 3, RSSI: 84.4, B: 2.4
+4: EPID: 551, Rec# 2, Time: 100 Src: 1, MAC: 551, Auth: F, Pri: none, C: 1, RSSI: 2.4, B: 1.3
+Number records: 4, Array size: 4
+# 
+# To determine if test 4 passes look for 4 records, and the 111 record should be 
+# updated with Rec# as 4.  Stats should be 4 records, size 4
+# 
+# TEST 5: look for records in the list and not in the list
+# 
+List has 4 records.  Looking for EPID 111
+EPID: 111, Rec# 4, Time: 106 Src: 0, MAC: 111, Auth: F, Pri: none, C: 3, RSSI: 64.4, B: 2.4
+List has 4 records.  Looking for EPID 551
+EPID: 551, Rec# 2, Time: 100 Src: 1, MAC: 551, Auth: F, Pri: none, C: 1, RSSI: 2.4, B: 1.3
+List has 4 records.  Looking for EPID 3
+Did not find ephemeral ID 3
+List has 4 records.  Looking for EPID 555
+Did not find ephemeral ID 555
+# 
+# To determine if test 5 passes it should print two records found and
+# two records not found.  
+# 
+# TEST 6:  Attempt to add fifth record. If list size is 4 then it will replace 551 
+# 
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Removed old record and added: 222
+List has 4 records
+1: EPID: 100, Rec# 3, Time: 105 Src: 2, MAC: 100, Auth: T, Pri: none, C: 2, RSSI: 11.1, B: 5
+2: EPID: 111, Rec# 4, Time: 106 Src: 0, MAC: 111, Auth: F, Pri: none, C: 3, RSSI: 64.4, B: 2.4
+3: EPID: 222, Rec# 6, Time: 106 Src: 1, MAC: 0, Auth: F, Pri: none, C: 74, RSSI: 2.4, B: 0
+4: EPID: 333, Rec# 5, Time: 106 Src: 0, MAC: 333, Auth: F, Pri: none, C: 3, RSSI: 84.4, B: 2.4
+Number records: 4, Array size: 4
+# 
+# To check test 6, look for Removed if list size is four.  Print shows 4 
+# records Stats shows 4 records.  If the program is run with a list
+# size of 5 or larger then the record should be added instead of replaced.
+# 
+# TEST 7: Remove the oldest record number in the list 
+# 
+Removed oldest EPID 100
+List has 3 records
+1: EPID: 111, Rec# 4, Time: 106 Src: 0, MAC: 111, Auth: F, Pri: none, C: 3, RSSI: 64.4, B: 2.4
+2: EPID: 222, Rec# 6, Time: 106 Src: 1, MAC: 0, Auth: F, Pri: none, C: 74, RSSI: 2.4, B: 0
+3: EPID: 333, Rec# 5, Time: 106 Src: 0, MAC: 333, Auth: F, Pri: none, C: 3, RSSI: 84.4, B: 2.4
+# 
+# To verify test 7, should see removed 100, and final list
+# should be printed with 3 records.
+# 
+# TEST 8: Match one record in list.  Verify it is removed
+# 
+1: EPID: 222, Rec# 6, Time: 106 Src: 1, MAC: 0, Auth: F, Pri: none, C: 74, RSSI: 2.4, B: 0
+Checked 4 IDs and found 1 matches
+List has 2 records.  Looking for EPID 222
+Did not find ephemeral ID 222
+List has 2 records
+1: EPID: 111, Rec# 4, Time: 106 Src: 0, MAC: 111, Auth: F, Pri: none, C: 3, RSSI: 64.4, B: 2.4
+2: EPID: 333, Rec# 5, Time: 106 Src: 0, MAC: 333, Auth: F, Pri: none, C: 3, RSSI: 84.4, B: 2.4
+# 
+# To verify this test, confirm that there was 1 match and record 222 was removed.
+# 
+# TEST 9:  First try to clear when there are no old records.  Then clear all
+# 
+No old records found: 106
+List has 2 records
+1: EPID: 111, Rec# 4, Time: 106 Src: 0, MAC: 111, Auth: F, Pri: none, C: 3, RSSI: 64.4, B: 2.4
+2: EPID: 333, Rec# 5, Time: 106 Src: 0, MAC: 333, Auth: F, Pri: none, C: 3, RSSI: 84.4, B: 2.4
+Removed 2 records older than 107
+List empty
+# 
+# To verfity check the first clear did not change the list but the second removed all entries.
+# 
+# TEST 10: Quit
+# 
+# To verify, run with valgrind and confirm that both these messages are printed.
+# 
+# All heap blocks were freed -- no leaks are possible
+# 
+# ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+# 
+Goodbye

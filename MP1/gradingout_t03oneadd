@@ -1,0 +1,20 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDID x
+QUERY x
+CLEAROLD x
+TRIM
+MATCH x (end list with -1)
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2021
+# t03oneadd
+# 
+# Tests for adding and quiting with one item
+# 
+New list with size: 1
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+Goodbye

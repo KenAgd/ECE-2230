@@ -1,0 +1,120 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDID x
+QUERY x
+CLEAROLD x
+TRIM
+MATCH x (end list with -1)
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2021
+# t12match
+# 
+# Tests match 
+# 
+New list with size: 11
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 444
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 999
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 333
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 555
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 777
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 666
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 222
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 888
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 100
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 900
+List has 11 records
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 444, Rec# 1, Time: 101 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+10: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+11: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+# 
+# clears 444
+1: EPID: 444, Rec# 1, Time: 101 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 4 IDs and found 1 matches
+List has 10 records
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+10: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+# 
+# clears none
+Checked 1 IDs and found 0 matches
+List has 10 records
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+10: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+# 
+# clears 100 and 999 front and back
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 2 IDs and found 1 matches
+List has 9 records
+1: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+# 
+# clears four in a row 333, 555, 666, 777
+1: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 4 IDs and found 4 matches
+Exposure notification
+List has 5 records
+1: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+# 
+# clears four remaining 900, 888, 111, 222 
+1: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 4 IDs and found 4 matches
+Exposure notification
+List has 1 records
+1: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+# 
+Goodbye

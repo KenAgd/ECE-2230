@@ -1,0 +1,73 @@
+Assumptions: these tests are designed with a list size of 5
+
+TEST 1: Create list and try to delete from an empty list
+
+CREATE 5
+TRIM
+
+
+
+
+TEST 2:  Add 4 entries to list and print
+
+CREATE 5
+ADDID 111
+100
+0
+111
+T
+0
+2
+54.2
+2.4
+ADDID 551 
+100
+1
+551
+F
+0
+1
+2.4
+1.3
+ADDID 100 
+105
+2
+100
+T
+1
+2
+11.1
+5.0
+ADDID 440
+100
+1
+551
+F
+0
+1
+2.4
+1.3
+PRINT
+STATS
+
+TEST 3: Search the list for specific ep_id
+QUERY 111
+QUERY 112
+QUERY 100
+QUERY 440
+
+
+TEST 4: Try to insert a duplicate
+ADDID 551
+105
+2
+100
+T
+1
+2
+11.1
+5.0
+
+
+TEST 5: QUIT
+QUIT

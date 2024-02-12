@@ -1,0 +1,155 @@
+Prof. Harlan Russell
+ECE 2230, MP1, Fall 2021
+testintput.txt
+
+This is a test script to show a few simple tests for the sequential list ADT.
+It provides an example of a test plan, but it does not consider many cases.
+
+You must create your own test script that tests for other cases.  You can start
+with this file and edit it to build your own test plan.  
+
+Assumptions: these tests are designed with a list size of 4.  
+
+TEST 1:  Add three entries to list.  
+
+CREATE 4
+ADDID 111
+100
+0
+111
+T
+0
+2
+54.2
+2.4
+ADDID 551 
+100
+1
+551
+F
+0
+1
+2.4
+1.3
+ADDID 100 
+105
+2
+100
+T
+1
+2
+11.1
+5.0
+
+
+To determine if test 1 passes look for three "Inserted" messages
+
+TEST 2: Print the list and verify three entries are sorted 
+
+PRINT
+STATS
+
+To deterine if test 2 passes the list should be printed in order with 3 records.
+Also, stats should show 3 records with an array size of 4
+
+TEST 3:  Update the 111 entry in the list and add an ID to fill the table
+
+ADDID 111
+106
+0
+111
+F
+1
+3
+64.4
+2.4
+ADDID 333
+106
+0
+333
+F
+1
+3
+84.4
+2.4
+
+To determine if test 3 passes look for "Updated" and "Inserted" messages
+
+TEST 4: Print the list, verify the entry for id 111 is replaced
+
+PRINT
+STATS
+
+To determine if test 4 passes look for 4 records, and the 111 record should be 
+updated with Rec# as 4.  Stats should be 4 records, size 4
+
+TEST 5: look for records in the list and not in the list
+
+QUERY 111
+QUERY 551 
+QUERY 3
+QUERY 555
+
+To determine if test 5 passes it should print two records found and
+two records not found.  
+
+TEST 6:  Attempt to add fifth record. If list size is 4 then it will replace 551 
+
+ADDID 222
+106
+1
+F
+1
+3
+74.4
+2.4
+
+PRINT
+STATS
+
+To check test 6, look for Removed if list size is four.  Print shows 4 
+records Stats shows 4 records.  If the program is run with a list
+size of 5 or larger then the record should be added instead of replaced.
+
+TEST 7: Remove the oldest record number in the list 
+
+TRIM
+PRINT
+
+To verify test 7, should see removed 100, and final list
+should be printed with 3 records.
+
+TEST 8: Match one record in list.  Verify it is removed
+
+MATCH 2
+100
+200
+222
+551
+-1
+QUERY 222
+PRINT
+
+To verify this test, confirm that there was 1 match and record 222 was removed.
+
+TEST 9:  First try to clear when there are no old records.  Then clear all
+
+CLEAROLD 106
+PRINT
+CLEAROLD 107
+PRINT
+
+To verfity check the first clear did not change the list but the second removed all entries.
+
+TEST 10: Quit
+
+To verify, run with valgrind and confirm that both these messages are printed.
+
+All heap blocks were freed -- no leaks are possible
+
+ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+QUIT
+
+Any lines after the QUIT command are ignored.
+

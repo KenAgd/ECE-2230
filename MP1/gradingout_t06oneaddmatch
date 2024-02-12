@@ -1,0 +1,28 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDID x
+QUERY x
+CLEAROLD x
+TRIM
+MATCH x (end list with -1)
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2021
+# t06oneaddmatch
+# 
+# Tests for match one item
+# 
+New list with size: 1
+Checked 2 IDs and found 0 matches
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+Checked 2 IDs and found 0 matches
+List has 1 records
+1: EPID: 111, Rec# 1, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 3 IDs and found 0 matches
+List has 1 records
+1: EPID: 111, Rec# 1, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 1 IDs and found 0 matches
+Goodbye

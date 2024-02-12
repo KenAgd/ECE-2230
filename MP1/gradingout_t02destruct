@@ -1,0 +1,18 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDID x
+QUERY x
+CLEAROLD x
+TRIM
+MATCH x (end list with -1)
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2021
+# t02destruct
+# 
+# Tests for empty list to check contruct and destruct
+# 
+New list with size: 1000
+Goodbye

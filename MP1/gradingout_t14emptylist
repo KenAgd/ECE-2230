@@ -1,0 +1,23 @@
+Welcome to lab1. Possible commands:
+CREATE x
+ADDID x
+QUERY x
+CLEAROLD x
+TRIM
+MATCH x (end list with -1)
+STATS
+PRINT
+QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP1, Fall 2021
+# t14emptylist
+# 
+# Tests for case when list is empty except trim
+# 
+New list with size: 5
+Number records: 0, Array size: 5
+List empty
+List empty. Did not find ephemeral ID 111
+No old records found: 106
+Checked 1 IDs and found 0 matches
+Goodbye
