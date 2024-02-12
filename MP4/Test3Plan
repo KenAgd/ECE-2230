@@ -1,0 +1,65 @@
+Test plan:
+	Unit driver 3 tests coalescing by alloating and freeing 2 different blocks of memory.
+
+Seed: 1765640879
+First-fit search policy without coalescing
+
+----- Begin unit driver 3 -----
+p=0x55c0029a4100, size=232 (units), end=0x55c0029a4f80, next=0x55c0029a4f80 
+p=0x55c0029a4f80, size=8 (units), end=0x55c0029a5000, next=0x55c0029a4000 
+p=0x55c0029a4000, size=16 (units), end=0x55c0029a4100, next=0x55c000c4c010 
+p=0x55c000c4c010, size=0 (units), end=0x55c000c4c010, next=0x55c0029a4100 <-- dummy
+p=0x55c0029a4100, size=208 (units), end=0x55c0029a4e00, next=0x55c0029a4e00 
+p=0x55c0029a4e00, size=8 (units), end=0x55c0029a4e80, next=0x55c0029a4e80 
+p=0x55c0029a4e80, size=16 (units), end=0x55c0029a4f80, next=0x55c0029a4f80 
+p=0x55c0029a4f80, size=8 (units), end=0x55c0029a5000, next=0x55c0029a4000 
+p=0x55c0029a4000, size=16 (units), end=0x55c0029a4100, next=0x55c000c4c010 
+p=0x55c000c4c010, size=0 (units), end=0x55c000c4c010, next=0x55c0029a4100 <-- dummy
+p=0x55c0029a4100, size=184 (units), end=0x55c0029a4c80, next=0x55c0029a4c80 
+p=0x55c0029a4c80, size=8 (units), end=0x55c0029a4d00, next=0x55c0029a4d00 
+p=0x55c0029a4d00, size=16 (units), end=0x55c0029a4e00, next=0x55c0029a4e00 
+p=0x55c0029a4e00, size=8 (units), end=0x55c0029a4e80, next=0x55c0029a4e80 
+p=0x55c0029a4e80, size=16 (units), end=0x55c0029a4f80, next=0x55c0029a4f80 
+p=0x55c0029a4f80, size=8 (units), end=0x55c0029a5000, next=0x55c0029a4000 
+p=0x55c0029a4000, size=16 (units), end=0x55c0029a4100, next=0x55c000c4c010 
+p=0x55c000c4c010, size=0 (units), end=0x55c000c4c010, next=0x55c0029a4100 <-- dummy
+p=0x55c0029a4100, size=160 (units), end=0x55c0029a4b00, next=0x55c0029a4b00 
+p=0x55c0029a4b00, size=8 (units), end=0x55c0029a4b80, next=0x55c0029a4b80 
+p=0x55c0029a4b80, size=16 (units), end=0x55c0029a4c80, next=0x55c0029a4c80 
+p=0x55c0029a4c80, size=8 (units), end=0x55c0029a4d00, next=0x55c0029a4d00 
+p=0x55c0029a4d00, size=16 (units), end=0x55c0029a4e00, next=0x55c0029a4e00 
+p=0x55c0029a4e00, size=8 (units), end=0x55c0029a4e80, next=0x55c0029a4e80 
+p=0x55c0029a4e80, size=16 (units), end=0x55c0029a4f80, next=0x55c0029a4f80 
+p=0x55c0029a4f80, size=8 (units), end=0x55c0029a5000, next=0x55c0029a4000 
+p=0x55c0029a4000, size=16 (units), end=0x55c0029a4100, next=0x55c000c4c010 
+p=0x55c000c4c010, size=0 (units), end=0x55c000c4c010, next=0x55c0029a4100 <-- dummy
+p=0x55c0029a4100, size=136 (units), end=0x55c0029a4980, next=0x55c0029a4980 
+p=0x55c0029a4980, size=8 (units), end=0x55c0029a4a00, next=0x55c0029a4a00 
+p=0x55c0029a4a00, size=16 (units), end=0x55c0029a4b00, next=0x55c0029a4b00 
+p=0x55c0029a4b00, size=8 (units), end=0x55c0029a4b80, next=0x55c0029a4b80 
+p=0x55c0029a4b80, size=16 (units), end=0x55c0029a4c80, next=0x55c0029a4c80 
+p=0x55c0029a4c80, size=8 (units), end=0x55c0029a4d00, next=0x55c0029a4d00 
+p=0x55c0029a4d00, size=16 (units), end=0x55c0029a4e00, next=0x55c0029a4e00 
+p=0x55c0029a4e00, size=8 (units), end=0x55c0029a4e80, next=0x55c0029a4e80 
+p=0x55c0029a4e80, size=16 (units), end=0x55c0029a4f80, next=0x55c0029a4f80 
+p=0x55c0029a4f80, size=8 (units), end=0x55c0029a5000, next=0x55c0029a4000 
+p=0x55c0029a4000, size=16 (units), end=0x55c0029a4100, next=0x55c000c4c010 
+p=0x55c000c4c010, size=0 (units), end=0x55c000c4c010, next=0x55c0029a4100 <-- dummy
+
+		MP4 Heap Memory Statistics
+----------------------------------------------------
+
+	Number of blocks in free list: 12
+	Min: 128
+	Max: 2176
+	Average: 372
+	Total bytes in free list: 4096
+	Number of sbrk calls: 1
+	Number of requested pages: 1
+	Heap status:  all memory is in the heap -- no leaks are possible
+
+all memory is in the heap -- no leaks are possible
+
+----- End unit test driver 3 -----
+
+

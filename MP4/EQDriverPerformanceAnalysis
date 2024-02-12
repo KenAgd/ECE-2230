@@ -1,0 +1,125 @@
+Test plan:
+
+1)Dicuss why you selected your mem_chunk_t structure, including implementing a one-way versus two-way linked list and how that effects the efficiency of searching for and allocating memory?
+		-Chose to use a singly circular linked list to reduce the amount of if statements when trying to find nodes or find the insertion position of new memory. The trade off of this is that it makes overall run time and efficiency worse due to having to only be able to traverse the list in one direction instead of being able to go either way. An example of this inefficiency would be if I the rover was currently in the middle of the list and I wanted to remove a node towards the head. The rover would have to have to iterate forward thru the list instead of just going back a couple spots
+
+
+2)Discuss the advantages and disadvantages of first-fit, best-fit, and worst-fit search policies, and how the search policy and the roving pointer effect fragmentation of the free list?
+	-First fit finds the first free partition thats just big enough to hold the new allocation. This policy is the fastest algorithm of the three but will leave small open partitions between each allocation. This is especially seen with large allocations.
+	
+	-Best fit finds the almost perfect partition to hold the new allocation. This policy minimizes the amount of open holes in the partition but is slower in its search for the perfect insertion point.
+	
+	-Worst fit will just find the largest open partition for the new allocation. This policy in the beginning is relatively good at keeping partition holes to a minimum, but large allocations after the program has been running for a while might not be able to be accommodated since the largest open partition has already been split up into smaller partitions.
+
+
+3)Discuss the effect of coalescing on fragmentation and run time?
+	-Coalescing works by taking all the open mem chunks stuck in between allocations and merges them in the back to reduce the amount of holes between allocations. This reduces run time since the rover doesn't have to search between every allocation to find a chunk big enough to hold the new allocation. It just has to rove to the open chunk and slap the new allocation in the back
+
+
+Seed: 1765640879
+First-fit search policy without coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=675840B, chunks=1, alloc=554176, free=121664
+After exercise, time=263.508
+arena=811008B, chunks=251, alloc=373776, free=437232
+After cleanup
+arena=811008B, chunks=337, alloc=241824, free=569184
+----- End of equilibrium test -----
+
+
+Seed: 1765640879
+Best-fit search policy without coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=4194304B, chunks=1, alloc=545024, free=3521056
+After exercise, time=2431.44
+arena=29360128B, chunks=75915, alloc=934240, free=23517312
+After cleanup
+arena=29360128B, chunks=76692, alloc=724036, free=23727516
+----- End of equilibrium test -----
+
+
+
+
+
+/////with coalescing//////
+
+Seed: 1765640879
+Worst-fit search policy without coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=4194304B, chunks=1, alloc=545024, free=3521056
+After exercise, time=2468.32
+arena=29360128B, chunks=75915, alloc=934240, free=23517312
+After cleanup
+arena=29360128B, chunks=76692, alloc=724036, free=23727516
+----- End of equilibrium test -----
+
+
+
+Seed: 1765640879
+First-fit search policy using coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=675840B, chunks=1, alloc=554176, free=121664
+After exercise, time=259.855
+arena=811008B, chunks=251, alloc=373776, free=437232
+After cleanup
+arena=811008B, chunks=337, alloc=241824, free=569184
+----- End of equilibrium test -----
+
+
+Seed: 1765640879
+Best-fit search policy using coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=675840B, chunks=1, alloc=554176, free=121664
+After exercise, time=266.522
+arena=811008B, chunks=251, alloc=373776, free=437232
+After cleanup
+arena=811008B, chunks=337, alloc=241824, free=569184
+----- End of equilibrium test -----
+
+
+Seed: 1765640879
+Worst-fit search policy using coalescing
+
+Equilibrium test driver using system malloc and free
+  Trials in equilibrium: 100000
+  Warmup allocations: 1000
+  Average array size: 128
+  Range for average array size: 127
+After warmup
+arena=675840B, chunks=1, alloc=554176, free=121664
+After exercise, time=255.569
+arena=811008B, chunks=251, alloc=373776, free=437232
+After cleanup
+arena=811008B, chunks=337, alloc=241824, free=569184
+----- End of equilibrium test -----
+
