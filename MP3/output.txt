@@ -1,0 +1,498 @@
+The date today is Sat 25 Sep 2021 10:44:25 PM EDT		
+insertion sort with random list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	1.393000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	44.893000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	144.290000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	333.252000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	662.828000	1
+Goodbye
+insertion sort with ascending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	0.056000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	0.356000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	0.386000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	0.661000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	0.963000	1
+Goodbye
+insertion sort with descending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	0.037000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	0.410000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	0.496000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	1.406000	1
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	1.683000	1
+Goodbye
+extremum sort with random list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	3.147000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	51.852000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	235.629000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	583.303000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	1104.930000	2
+Goodbye
+extremum sort with ascending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.610000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	35.912000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	146.708000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	320.605000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	603.816000	2
+Goodbye
+extremum sort with descending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	3.618000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	58.046000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	244.099000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	576.625000	2
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	984.583000	2
+Goodbye
+recursive selection sort with random list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.304000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	35.055000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	151.447000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	344.577000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	594.102000	3
+Goodbye
+recursive selection sort with ascending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.071000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	45.524000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	134.280000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	314.573000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	578.223000	3
+Goodbye
+recursive selection sort with descending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.096000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	32.703000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	137.897000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	305.102000	3
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	548.697000	3
+Goodbye
+iterative selection sort with random list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.160000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	33.538000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	138.804000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	344.660000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	626.774000	4
+Goodbye
+iterative selection sort with ascending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.046000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	36.627000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	158.316000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	314.850000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	549.946000	4
+Goodbye
+iterative selection sort with descending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+1000	2.082000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+4000	31.714000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+8000	127.675000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+12000	307.937000	4
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	539.850000	4
+Goodbye
+merge sort with random list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	3.635000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+100000	89.863000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+200000	138.385000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+300000	250.646000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+400000	345.504000	5
+Goodbye
+merge sort with ascending list		
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+16000	2.213000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+100000	13.707000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+200000	34.211000	5
+Goodbye
+Welcome to lab3.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP; SORT; APPEXP
+           : STATS; QUIT
+300000	62.877000	5
+Goodbye
