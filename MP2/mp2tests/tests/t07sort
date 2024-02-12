@@ -1,0 +1,55 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t07sort
+
+Tests sorting fill list and add last to front 
+
+CREATE 5
+ADDID 444
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 222
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 333
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 555
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 111
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+QUIT
+

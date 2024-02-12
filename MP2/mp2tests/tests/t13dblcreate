@@ -1,0 +1,105 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t13dblcreate
+
+Tests two creates
+
+CREATE 5
+ADDID 111
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 222
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 333
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 444
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 555
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+
+make a new list
+CREATE 10
+ADDID 556
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 445
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 334
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 223
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 112
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+
+QUIT
+

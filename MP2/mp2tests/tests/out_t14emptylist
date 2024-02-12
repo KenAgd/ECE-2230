@@ -1,0 +1,20 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t14emptylist
+# 
+# Tests for case when list is empty except trim
+# 
+New list with size: 5
+Number contacts: 0, exposures: 0
+Contact list is empty
+
+List empty. Did not find ephemeral ID 111
+No old records found: 106
+Starting exposure scan of contact list with threshold 2
+Checked 1 IDs and found 0 matches
+Goodbye

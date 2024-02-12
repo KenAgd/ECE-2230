@@ -1,0 +1,51 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t13dblcreate
+# 
+# Tests two creates
+# 
+New list with size: 5
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 222
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 333
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 444
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 555
+Contact list contains 5 records.
+1: EPID: 111, Rec# 1, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 222, Rec# 2, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 333, Rec# 3, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 444, Rec# 4, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 5, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# make a new list
+New list with size: 10
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 556
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 445
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 334
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 223
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 112
+Contact list contains 5 records.
+1: EPID: 112, Rec# 10, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 223, Rec# 9, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 334, Rec# 8, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 445, Rec# 7, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 556, Rec# 6, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+Goodbye

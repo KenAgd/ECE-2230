@@ -1,0 +1,17 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t14emptylist
+
+Tests for case when list is empty except trim
+
+CREATE 5
+STATS
+PRINT
+QUERY 111
+CLEAROLD 106
+MATCH 2
+100
+-1
+QUIT
+
+

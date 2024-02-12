@@ -1,0 +1,11 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t15emptytrim
+
+Tests trim for case when list is empty 
+
+CREATE 5
+TRIM
+QUIT
+
+

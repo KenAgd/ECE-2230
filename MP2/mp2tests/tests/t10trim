@@ -1,0 +1,134 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t10trim
+
+Tests trim from middle, end, front 
+
+CREATE 7
+ADDID 444
+105
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 777
+104
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 111
+101
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 333
+103
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 555
+105
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 666
+106
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 222
+102
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+
+trim 444 middle 
+
+TRIM
+PRINT
+
+trim 777 back 
+
+TRIM
+PRINT
+
+trim 111 front 
+
+TRIM
+PRINT
+
+ADDID 111
+222
+1
+111
+F
+none
+1
+64.2
+3.4
+PRINT
+
+ADDID 444
+333
+1
+111
+F
+none
+1
+64.2
+3.4
+PRINT
+
+ADDID 777
+555
+1
+111
+F
+none
+1
+64.2
+3.4
+PRINT
+
+remove all
+
+TRIM
+TRIM
+TRIM
+TRIM
+TRIM
+TRIM
+TRIM
+PRINT
+
+TRIM
+QUIT
+

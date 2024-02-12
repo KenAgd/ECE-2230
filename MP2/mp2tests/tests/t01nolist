@@ -1,0 +1,26 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t01nolist
+
+Tests for case when no list exists
+
+ADDID 111
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+QUERY 111
+CLEAROLD 106
+TRIM
+MATCH 2
+100
+-1
+STATS
+PRINT
+QUIT
+
+

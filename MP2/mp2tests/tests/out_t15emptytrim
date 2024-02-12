@@ -1,0 +1,14 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t15emptytrim
+# 
+# Tests trim for case when list is empty 
+# 
+New list with size: 5
+The list is empty and no ID removed
+Goodbye

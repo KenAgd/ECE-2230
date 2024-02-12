@@ -1,0 +1,59 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t08sortreplace
+# 
+# Tests sorting fill list and add last to front 
+# 
+New list with size: 6
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 444
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 333
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 222
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 555
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 666
+Contact list contains 6 records.
+1: EPID: 111, Rec# 5, Time: 101 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 222, Rec# 3, Time: 102 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 333, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 444, Rec# 1, Time: 104 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 6, Time: 106 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# List is full, replace first but 444 is oldest
+# 
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Updated: 111
+Contact list contains 6 records.
+1: EPID: 111, Rec# 7, Time: 222 Src: 1, MAC: 111, Auth: F, Pri: none, C: 1, RSSI: 64.2, B: 3.4
+2: EPID: 222, Rec# 3, Time: 102 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 333, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 444, Rec# 1, Time: 104 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 6, Time: 106 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# replace when found after oldest
+# 
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Updated: 666
+Contact list contains 6 records.
+1: EPID: 111, Rec# 7, Time: 222 Src: 1, MAC: 111, Auth: F, Pri: none, C: 1, RSSI: 64.2, B: 3.4
+2: EPID: 222, Rec# 3, Time: 102 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 333, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 444, Rec# 1, Time: 104 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 8, Time: 333 Src: 1, MAC: 111, Auth: F, Pri: none, C: 1, RSSI: 64.2, B: 3.4
+
+Goodbye

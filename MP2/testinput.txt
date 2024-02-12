@@ -1,0 +1,79 @@
+TEST 1:  Add three entries to list.  
+
+CREATE 5
+ADDID 111
+100
+0
+111
+T
+0
+2
+54.2
+2.4
+ADDID 551 
+100
+1
+551
+F
+0
+1
+2.4
+1.3
+ADDID 100 
+105
+2
+100
+T
+1
+2
+11.1
+5.0
+PRINT
+STATS
+ 
+TEST 2:  Update the 111 entry
+
+ADDID 111
+106
+0
+111
+F
+1
+3
+64.4
+2.4
+PRINT
+STATS
+
+TEST 3: look for records in the list and not in the list
+
+QUERY 111
+QUERY 555
+
+TEST 6:  Attempt to add fifth record. If list size is 4 then it will replace 551 
+
+ADDID 222
+106
+1
+F
+1
+3
+74.4
+2.4
+ADDID 677
+106
+1
+F
+1
+3
+74.4
+2.4
+PRINT
+STATS
+
+TEST 7: Remove the oldest record number in the list 
+
+TRIM
+PRINT
+STATS
+

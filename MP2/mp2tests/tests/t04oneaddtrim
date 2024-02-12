@@ -1,0 +1,21 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t04oneaddtrim
+
+Tests add one and trim
+
+CREATE 1
+ADDID 111
+100
+0
+111
+T
+standard
+2
+54.2
+2.4 
+PRINT
+TRIM
+PRINT
+QUIT
+

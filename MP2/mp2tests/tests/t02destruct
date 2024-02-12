@@ -1,0 +1,9 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t02destruct
+
+Tests for empty list to check contruct and destruct
+
+CREATE 1000
+QUIT
+

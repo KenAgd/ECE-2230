@@ -1,0 +1,126 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t12match
+# 
+# Tests match 
+# 
+New list with size: 11
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 444
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 999
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 333
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 555
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 777
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 666
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 222
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 888
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 100
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 900
+Contact list contains 11 records.
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 444, Rec# 1, Time: 101 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+10: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+11: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# clears 444
+Starting exposure scan of contact list with threshold 2
+EPID: 444, Rec# 1, Time: 101 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 4 IDs and found 1 matches
+Contact list contains 10 records.
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+10: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# clears none
+Starting exposure scan of contact list with threshold 1
+Checked 1 IDs and found 0 matches
+Notification 1 accumulated exposures
+Contact list contains 10 records.
+1: EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+9: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+10: EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# clears 100 and 999 front and back
+Starting exposure scan of contact list with threshold 2
+EPID: 100, Rec# 10, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 999, Rec# 2, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 2 IDs and found 2 matches
+Notification 3 accumulated exposures
+Contact list contains 8 records.
+1: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+5: EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+6: EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+7: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+8: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# clears four in a row 333, 555, 666, 777
+Starting exposure scan of contact list with threshold 3
+EPID: 333, Rec# 4, Time: 105 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 555, Rec# 5, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 666, Rec# 7, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 777, Rec# 6, Time: 110 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 4 IDs and found 4 matches
+Notification 7 accumulated exposures
+Contact list contains 4 records.
+1: EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+2: EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+3: EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+4: EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+# 
+# clears four remaining 900, 888, 111, 222 
+Starting exposure scan of contact list with threshold 3
+EPID: 900, Rec# 11, Time: 120 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 888, Rec# 9, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 111, Rec# 3, Time: 103 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+EPID: 222, Rec# 8, Time: 115 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+Checked 4 IDs and found 4 matches
+Notification 11 accumulated exposures
+Contact list is empty
+
+# 
+Goodbye

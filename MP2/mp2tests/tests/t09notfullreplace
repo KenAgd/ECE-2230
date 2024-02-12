@@ -1,0 +1,90 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t09notfullreplace
+
+Tests replacing when the list is not full
+
+CREATE 10
+ADDID 555
+105
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 444
+104
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 333
+103
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 222
+102
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 111
+101
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+
+replace front, middle, and back
+
+ADDID 111
+222
+1
+111
+F
+none
+1
+64.2
+3.4
+PRINT
+
+ADDID 333
+333
+1
+111
+F
+none
+1
+64.2
+3.4
+PRINT
+
+ADDID 555
+555
+1
+111
+F
+none
+1
+64.2
+3.4
+PRINT
+QUIT
+

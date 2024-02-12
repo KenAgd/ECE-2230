@@ -1,0 +1,23 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t05oneaddclear
+# 
+# Test to clear with one item
+# 
+New list with size: 1
+No old records found: 100
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+Inserted: 111
+No old records found: 100
+Contact list contains 1 record.
+1: EPID: 111, Rec# 1, Time: 100 Src: 0, MAC: 111, Auth: T, Pri: standard, C: 2, RSSI: 54.2, B: 2.4
+
+Removed 1 records older than 101
+Contact list is empty
+
+Goodbye

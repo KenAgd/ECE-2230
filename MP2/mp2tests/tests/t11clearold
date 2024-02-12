@@ -1,0 +1,112 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t11clearold
+
+Tests clear of old records 
+
+CREATE 9
+ADDID 444
+101
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 999
+103
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 111
+103
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 333
+105
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 555
+110
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 777
+110
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 666
+110
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 222
+115
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 888
+115
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+
+clears 444
+CLEAROLD 102
+PRINT
+
+clears none
+CLEAROLD 103
+PRINT
+
+clears 111 and 999 front and back
+CLEAROLD 104
+PRINT
+
+clears four in a row 333, 555, 666, 777
+CLEAROLD 111
+PRINT
+
+clears last two 222, 888
+CLEAROLD 200
+PRINT
+
+QUIT
+

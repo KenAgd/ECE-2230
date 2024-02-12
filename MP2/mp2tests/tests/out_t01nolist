@@ -1,0 +1,22 @@
+Welcome to lab2.
+Contacts   : CREATE size; ADDID id; QUERY id; CLEAROLD time; TRIM; PRINT
+           : MATCH thresh (end list of ids with -1)
+Exposures  : RECEXP time; CLEAREXP; PRINTEXP
+           : STATS; QUIT
+# Prof. Harlan Russell
+# ECE 2230, MP2, Fall 2021
+# t01nolist
+# 
+# Tests for case when no list exists
+# 
+time received:source type:MAC address:Authenticated (T/F):Privacy (none|standard|strong|NSA):Channel:RSSI:Band (2.4|3.5|5.0):
+The list does not exist.  Record rejected: 111
+List empty. Did not find ephemeral ID 111
+No old records found: 106
+The list is empty and no ID removed
+Starting exposure scan of contact list with threshold 2
+Checked 1 IDs and found 0 matches
+Number contacts: 0, exposures: 0
+Contact list is empty
+
+Goodbye

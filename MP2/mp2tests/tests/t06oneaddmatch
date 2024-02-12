@@ -1,0 +1,36 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t06oneaddmatch
+
+Tests for match one item
+
+CREATE 1
+MATCH 1
+222
+111
+-1
+ADDID 111
+100
+0
+111
+T
+standard
+2
+54.2
+2.4
+MATCH 1
+222
+333
+-1
+PRINT
+MATCH 1
+222
+111
+333
+-1
+PRINT
+MATCH 1
+111
+-1
+QUIT
+

@@ -1,0 +1,150 @@
+Prof. Harlan Russell
+ECE 2230, MP2, Fall 2021
+t12match
+
+Tests match 
+
+CREATE 11
+ADDID 444
+101
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 999
+103
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 111
+103
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 333
+105
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 555
+110
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 777
+110
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 666
+110
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 222
+115
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 888
+115
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 100
+120
+0
+111
+T
+standard
+2
+54.2
+2.4
+ADDID 900
+120
+0
+111
+T
+standard
+2
+54.2
+2.4
+PRINT
+
+clears 444
+MATCH 2
+400
+444
+300
+444
+-1
+PRINT
+
+clears none
+MATCH 1
+987
+-1
+PRINT
+
+clears 100 and 999 front and back
+MATCH 2
+100
+999
+-1
+PRINT
+
+clears four in a row 333, 555, 666, 777
+MATCH 3
+333
+555
+666
+777
+-1
+PRINT
+
+clears four remaining 900, 888, 111, 222 
+MATCH 3
+900
+888
+111
+222
+-1
+PRINT
+
+QUIT
+
